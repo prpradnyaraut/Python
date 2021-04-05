@@ -30,7 +30,6 @@ def thread2(lock1):
 	
 def main():
 	print("Inside main")
-	
 	lock1 = threading.Lock()
 	t1 = threading.Thread(target = Display ,args = (thread1,lock1,))
 	t2 = threading.Thread(target = Display ,args = (thread2,lock1,))
